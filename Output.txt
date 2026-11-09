@@ -1,0 +1,81 @@
+==================================================
+ CAMPUS CAFE ORDERING SYSTEM - CHECKPOINT 3
+==================================================
+
+--- DEMONSTRATION 1: NO DISCOUNT (DETAILED RECEIPT) ---
+========================================
+           CAMPUS CAFE RECEIPT          
+========================================
+P02 Sandwich
+  2 x 5.00 = 10.00
+P01 Coffee
+  1 x 2.50 = 2.50
+----------------------------------------
+Policy:          No Discount
+Subtotal:        12.50
+Discount:        0.00
+Final Total:     12.50
+========================================
+
+--- DEMONSTRATION 2: STUDENT DISCOUNT (DETAILED RECEIPT) ---
+========================================
+           CAMPUS CAFE RECEIPT          
+========================================
+P02 Sandwich
+  2 x 5.00 = 10.00
+P01 Coffee
+  1 x 2.50 = 2.50
+----------------------------------------
+Policy:          Student Discount
+Subtotal:        12.50
+Discount:        1.25
+Final Total:     11.25
+========================================
+
+--- DEMONSTRATION 3: EMPLOYEE DISCOUNT (COMPACT RECEIPT) ---
+========================================
+      CAMPUS CAFE COMPACT RECEIPT       
+========================================
+Policy:          Employee Discount
+Total Items:     3
+Subtotal:        12.50
+Discount:        2.50
+Final Total:     10.00
+========================================
+
+--- RUNNING AUTOMATED VERIFICATION SUITE ---
+[T01] PASS
+[T02] PASS
+[T03] PASS
+[T04] PASS
+[T05] PASS
+[T06] PASS
+[T07] PASS
+[T08] PASS
+[T09] PASS
+[T10] PASS
+[T11] PASS
+[T12a_NoDiscount_Negative] PASS
+[T12b_NoDiscount_Zero] PASS
+[T12c_StudentDiscount_Negative] PASS
+[T12d_StudentDiscount_Zero] PASS
+[T12e_EmployeeDiscount_Negative] PASS
+[T12f_EmployeeDiscount_Zero] PASS
+[T13] PASS
+[T14] PASS
+[T15a_NullCatalogue] PASS
+[T15b_NullPolicy] PASS
+[T15c_NullDetailedSummary] PASS
+[T15d_NullCompactSummary] PASS
+[T16a_FiveLines] PASS
+[T16b_NullLineInOrder] PASS
+[T17] PASS
+[T18] PASS
+[T19] PASS
+[T20] PASS
+[T21_DirectPolicy_EmployeePercentage] PASS
+[T22_CaseSensitiveCatalogueLookup] PASS
+
+==================================================
+Final Verification: 31/31 passed.
+==================================================
